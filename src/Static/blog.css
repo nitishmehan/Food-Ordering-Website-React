@@ -1,8 +1,14 @@
-body{
+*{
     padding: 0;
     margin: 0;
 }
 
+main{
+    background-color: white;
+    margin-top: 0px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
 
 .head{
     width: 100%;
@@ -168,7 +174,6 @@ border-radius: 6%;
     
     width: 100%;
     box-sizing: border-box;
-    
     display: flex;
     justify-content: space-evenly;
 }
@@ -245,7 +250,7 @@ border-radius: 6%;
 }
 
 .card-content .author {
-    margin-top: auto;
+    footer-top: auto;
     color: #999;
 }
 
@@ -843,7 +848,7 @@ footer{
 
 /* Footer top */
 .footer-top{
-    margin-top: 10vh;
+    footer-top: 10vh;
     height: 30vh;
     width: 100%;
     box-sizing: border-box;
@@ -1019,24 +1024,7 @@ body {
 
 
 
-/* 
-.dark_back{
-    background-color: #282828;
-    
-}
-.dark_color{
-    color: white;
-}
 
-.dark_icon{
-    background-color: #3c3c3c;
-} */
-
-
-/* .dark_back{
-    background-color: #282828;
-    
-} */
 
 
 
@@ -1298,7 +1286,6 @@ height: 40px;
 }
 .footer-top{
     flex-direction: column;
-    margin-top: 20vh;
 }
 
 .footer-inner-1 {
@@ -1364,7 +1351,7 @@ height: 40px;
   }
 @media only screen and (min-width: 710px) and (max-width: 1351px) {
     footer{
-        margin-top: 30vh;
+        footer-top: 30vh;
     }
     .responsive-head{
         display: block;
@@ -1684,7 +1671,7 @@ height: 40px;
 }
 .footer-top{
     flex-direction: column;
-    margin-top: 20vh;
+    footer-top: 20vh;
 }
 
 .footer-inner-1 {

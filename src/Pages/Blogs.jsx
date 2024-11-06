@@ -1,11 +1,24 @@
-import '../Static/R1.css'
+import BlogHeader from '../Components/BlogHeader'
+import BlogSidebar from '../Components/BlogSidebar'
+import Footer from "../Components/Footer";
+import BlogsList from '../Components/BlogsList'
+import '../Static/blog.css'
 import React from 'react'
 
 function Blogs() {
   return (
-    <div>
-      <h1>This is Blog Page</h1>
-    </div>
+      <>
+      <BlogHeader/>
+
+      <main>
+      <div className='main dark_back'>
+        <BlogSidebar/>
+        <BlogsList/>
+      </div>
+      </main>
+      <Footer/>        
+    
+      </>
   )
 }
 

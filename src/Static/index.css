@@ -343,7 +343,6 @@ a{
     scale: 1.1;
 }
 .grid div:nth-child(1){
-    /* width: 21vw; */
     overflow: hidden;
     border-radius: 15px;
 }
@@ -1098,7 +1097,7 @@ height: 40px;
 }
 .footer-top{
     flex-direction: column;
-    margin-top: 20vh;
+    /* p-top: 20vh; */
 }
 
 .footer-inner-1 {
@@ -1700,7 +1699,7 @@ height: 40px;
 }
 .footer-top{
     flex-direction: column;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
 }
 
 .footer-inner-1 {
