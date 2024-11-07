@@ -82,7 +82,7 @@ function HomeHeader() {
           <span className="material-symbols-outlined" id="dark_color">
             shopping_cart
           </span>
-          <a href="LOGIN_Register/login.html">
+          <a href="login">
             <div className="account">
               <img src="images/Mark.png" alt="" />
               <div className="account-name">
