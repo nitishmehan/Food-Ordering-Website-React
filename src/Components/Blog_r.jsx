@@ -151,7 +151,7 @@ function Blog_r({ img, title, content, author, date, onBack }) {
             <div key={comment.id} className="comment dark_icon dark_color">
               <div className="comment-avatar">
                 <img
-                  src="https://via.placeholder.com/50"
+                  src="images/review_photos/user_17878913.png"
                   alt={`${comment.fullName}'s avatar`}
                 />
               </div>
