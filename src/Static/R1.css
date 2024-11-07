@@ -20,7 +20,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-
+.cartbuttons{
+  border: none;
+  background-color: rgb(249, 249, 249);
+  width: 100%;
+}
 .head-logo {
   display: flex;
   justify-content: center;
@@ -173,6 +177,18 @@ h5 {
   gap: 10px;
   justify-content: right;
 }
+.item-counter{
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 75.8%;
+  top: 20px;
+  background: linear-gradient(to right, rgb(242, 169, 62), rgb(240, 112, 84));
+  font-weight: 700;  
+}
+
 
 /* Main Body */
 main {
@@ -314,6 +330,7 @@ main {
   color: rgb(242, 169, 62);
   h2 {
     font-weight: 600;
+    color: rgb(242, 169, 62)
   }
 }
 .add-button {
@@ -371,7 +388,7 @@ hr {
   background-color: rgb(249, 249, 249);
   display: flex;
   justify-content: space-evenly;
-  width: 23%;
+  width: 40%;
   padding: 3px;
   margin-bottom: 5px;
 }

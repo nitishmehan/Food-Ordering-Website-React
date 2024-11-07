@@ -2,6 +2,7 @@ import React from "react";
 
 function SearchBar() {
   return (
+    
     <div className="searchbar dark_icon dark_color">
       <div className="searchbox">
         <input type="search" placeholder="Search Dishes" />

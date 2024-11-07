@@ -1,6 +1,6 @@
 import React from "react";
 
-function RestrauntHeader() {
+function RestrauntHeader(props) {
   return (
     <header>
       <div className="head H-N-R">
@@ -35,6 +35,7 @@ function RestrauntHeader() {
               src="https://img.icons8.com/?size=100&id=On3brTbr5kbp&format=png&color=000000"
               alt=""
             />
+            <div className="item-counter">{props.cartcounter}</div>
             <div className="line"></div>
             <a
               style={{ textDecoration: "none" }}
