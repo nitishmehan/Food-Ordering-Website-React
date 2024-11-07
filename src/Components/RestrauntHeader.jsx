@@ -1,6 +1,19 @@
+import { useState } from "react";
 import React from "react";
 
 function RestrauntHeader(props) {
+
+  const [dispstate, setdispstate] = useState("none");
+
+  function togggleCartModel() {
+    if (dispstate === "none") {
+      setdispstate("flex");
+    } else {
+      setdispstate("none");
+    }
+  }
+
+
   return (
     <header>
       <div className="head H-N-R">
@@ -33,7 +46,7 @@ function RestrauntHeader(props) {
           <div className="head-profile flex">
             <img
               src="https://img.icons8.com/?size=100&id=On3brTbr5kbp&format=png&color=000000"
-              alt=""
+              style={{cursor:"pointer"}} onClick={togggleCartModel}
             />
             <div className="item-counter">{props.cartcounter}</div>
             <div className="line"></div>
@@ -151,6 +164,72 @@ function RestrauntHeader(props) {
             <li id="dark_color">Contact</li>
           </a>
         </ul>
+      </div>
+      <div className="cart-overlay" style={{display: dispstate}}>
+        <div className="container-child2 dark_icon">
+          <div className="title" id="dark_color">
+            Cart Items
+            <img src="https://cdn-icons-png.flaticon.com/128/1828/1828778.png" height="20px" alt="" onClick={togggleCartModel} style={{cursor:"pointer"}}/>
+
+          </div>
+          <hr />
+          {props.data.length === 0 ? (
+            <h1 style={{ margin: "40px 0px" }}>Your cart is empty.</h1>
+          ) : (
+            props.data.map((item, index) => (
+              <div className="cart-item-card" key={index}>
+                <div>
+                  <h4>{item.name}</h4>
+                  <h4 id="dark_color">${item.price}</h4>
+                </div>
+                <h5 id="dark_color">Hot Nacho Chips</h5>
+                <div>
+                  <li id="dark_color"> Serves 1 </li>
+                  <div className="cart-item-counter">
+                    <button
+                      className="cartbuttons"
+                      onClick={() => {
+                        props.subfun(item);
+                      }}
+                    >
+                      -
+                    </button>
+                    <div>{item.quantity}</div>
+                    <button
+                      onClick={() => {
+                        props.addfun(item);
+                      }}
+                      className="cartbuttons"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <hr />
+              </div>
+            ))
+          )}
+
+          <div className="bill">
+            <div className="title" id="dark_color">
+              Bill Details
+            </div>
+            <div className="subtotal">
+              <h5 id="dark_color">Subtotal</h5>
+              <h5 id="dark_color">{props.amount}</h5>
+            </div>
+            <div className="discount">
+              <h5 id="dark_color">Discount(10%)</h5>
+              <h5 id="dark_color">{0.1 * props.amount}</h5>
+            </div>
+            <hr />
+            <div className="topay">
+              <h4 id="dark_color">TO Pay</h4>
+              <h4 id="dark_color">{props.amount - props.amount * 0.1}</h4>
+            </div>
+          </div>
+          <div className="pay-button">PROCEED TO PAYMENT</div>
+        </div>
       </div>
     </header>
   );

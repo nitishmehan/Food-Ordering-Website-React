@@ -1,13 +1,13 @@
 import React from "react";
 
 function CartItems(props) {
+  
   return (
     <div className="container-child2 dark_icon">
       <div className="title" id="dark_color">
         Cart Items
       </div>
       <hr />
-
       {props.data.length === 0 ? (
         <h1 style={{margin:"40px 0px"}}>Your cart is empty.</h1>
       ) : (

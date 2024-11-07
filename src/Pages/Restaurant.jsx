@@ -191,7 +191,8 @@ function Restaurant() {
 
   return (
     <>
-      <RestrauntHeader cartcounter={counter} />
+      <RestrauntHeader cartcounter={counter} data={cart} addfun={handleAddToCart} amount={amount} subfun={handleRemoveFromCart} />
+
       <main>
         <div className="container">
           <div className="container-child1">
