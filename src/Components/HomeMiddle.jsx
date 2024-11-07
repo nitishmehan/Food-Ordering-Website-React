@@ -233,4 +233,4 @@ function HomeMiddle() {
   )
 }
 
-export default HomeMiddle
+export default HomeMiddle;
