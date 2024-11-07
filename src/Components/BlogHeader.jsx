@@ -1,6 +1,6 @@
 import React from 'react'
 
-function BlogHeader() {
+function BlogHeader(props) {
   return (
 
         <header>
@@ -51,7 +51,7 @@ function BlogHeader() {
 
             <div className="head-2">
                 <div className="head-2-1">
-                    <h1>Blog List</h1>
+                    <h1>{props.title}</h1>
                 </div>
                 <div className="head-2-2">
                     <img src="https://img.icons8.com/?size=100&id=BZhTcjGTwoBp&format=png&color=000000" alt=""/>

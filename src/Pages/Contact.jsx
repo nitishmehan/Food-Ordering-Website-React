@@ -1,11 +1,16 @@
-import '../Static/R1.css'
 import React from 'react'
+import BlogHeader from '../Components/BlogHeader'
+import Footer from '../Components/Footer'
+import ContactMain from '../Components/ContactMain'
+import '../Static/contact.css'
 
 function Contact() {
   return (
-    <div>
-      <h1>This is Contact page</h1>
-    </div>
+    <>
+      <BlogHeader title="Contact Us" />
+      <ContactMain />
+      <Footer />
+    </>
   )
 }
 

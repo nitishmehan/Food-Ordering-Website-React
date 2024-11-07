@@ -8,7 +8,7 @@ import React from 'react'
 function Blogs() {
   return (
       <>
-      <BlogHeader/>
+      <BlogHeader title="Blogs List" />
 
       <main>
       <div className='main dark_back'>
