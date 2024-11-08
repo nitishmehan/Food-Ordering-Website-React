@@ -542,17 +542,18 @@ hr {
   .card-container-middle div:nth-child(1) {
     display: flex;
     gap: 5px;
-    .item-name {
-      color: #3d3d3d;
-      font-weight: 600;
-      font-size: 12px;
-    }
+
   }
-  .card-container-middle {
-    p {
+  .card-container-middle div:nth-child(1) .item-name {
+    color: #3d3d3d;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .card-container-middle p{
+     
       font-size: 10px;
       color: rgb(116, 116, 116);
-    }
+      
   }
   .card-container-start {
     width: 40%;

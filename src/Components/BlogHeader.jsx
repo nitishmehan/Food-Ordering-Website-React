@@ -35,7 +35,7 @@ function BlogHeader(props) {
                     <img src="https://img.icons8.com/?size=100&id=On3brTbr5kbp&format=png&color=000000" alt=""
                         />
                     <div className="line"></div>
-                    <a style={{textDecoration: "none"}} href="LOGIN_Register/login.html">
+                    <a style={{textDecoration: "none"}} href="LOGIN">
                         <div className="head-me">
                             <div className="img"><img src="images/Mark.png" alt="" /></div>
                             <div className="head-me-content">

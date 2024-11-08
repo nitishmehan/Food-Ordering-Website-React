@@ -52,7 +52,7 @@ function RestrauntHeader(props) {
             <div className="line"></div>
             <a
               style={{ textDecoration: "none" }}
-              href="LOGIN_Register/login.html"
+              href="LOGIN"
             >
               <div className="head-me">
                 <div className="img">
@@ -105,9 +105,9 @@ function RestrauntHeader(props) {
           </div>
 
           <div className="head-profile flex">
-            <img
+          <img
               src="https://img.icons8.com/?size=100&id=On3brTbr5kbp&format=png&color=000000"
-              alt=""
+              style={{cursor:"pointer"}} onClick={togggleCartModel}
             />
             <div className="line"></div>
             <div className="head-me">
