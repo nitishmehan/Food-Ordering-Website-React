@@ -203,7 +203,7 @@ function Restaurant() {
             </div>
           </div>
           <CartItems data={cart} addfun={handleAddToCart} amount={amount} subfun={handleRemoveFromCart}/>
-          {/* <h1>Mic Testing 1 2 3</h1> */}
+          
         </div>
       </main>
       <Footer />
